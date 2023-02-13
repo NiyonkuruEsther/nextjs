@@ -12,16 +12,18 @@ export default function Home() {
         <div className=" container flex justify-between px-4 py-5 bg-white fixed w-full z-100">
           <div className="lg:flex">
             <picture className="flex gap-1 divide-x-2 divide-zinc-200 pt-1">
-              <Link href={"/dacade"}><img
-                src="/Images/rounded-black-logo.svg"
-                className=" w-10 p-1"
-                alt="logo"
-              /></Link>
-              
+              <Link href={"/dacade"}>
+                <img
+                  src="/Images/rounded-black-logo.svg"
+                  className=" w-10 p-1"
+                  alt="logo"
+                />
+              </Link>
 
               <p className="pt-1 lg:hidden">
-                <Link href={"/dacade"}><img className="pl-2 h-8" src="/Images/visual-logo.svg" /></Link>
-                
+                <Link href={"/dacade"}>
+                  <img className="pl-2 h-8" src="/Images/visual-logo.svg" />
+                </Link>
               </p>
             </picture>
             <p className="hidden lg:inline lg:text-lg lg:font-bold lg:text-zinc-900">
@@ -30,10 +32,11 @@ export default function Home() {
           </div>
 
           <div className="lg:flex lg:gap-20">
-            <p className="hidden lg:inline"><Link href={"/course"}>Start the Course</Link></p>
+            <p className="hidden lg:inline">
+              <Link href={"/course"}>Start the Course</Link>
+            </p>
             <button className="rounded-3xl text-lg bg-zinc-700 text-white pb-2 pt-1 px-6 lg:font-medium">
-            <Link href={"/wallet"}>Create wallet</Link>
-              
+              <Link href={"/wallet"}>Create wallet</Link>
             </button>
           </div>
         </div>
@@ -74,7 +77,6 @@ export default function Home() {
             <span>learning easy.</span>
           </div>
           <div className="flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:gap-0 lg:pt-28">
-           
             <Image_fixer
               src="/Images/visual-big-blue-green.png"
               text="Open NEAR wallet"
@@ -132,15 +134,17 @@ export default function Home() {
             Claim NEAR certificate
           </p>
           <p className="text-center mx-8 lg:mx-96 lg:text-xl lg:mt-1">
-            Upon course completion, receive the NEAR
-            dev 101 certificate as an NFT on your NEAR
-            wallet.
+            Upon course completion, receive the NEAR dev 101 certificate as an
+            NFT on your NEAR wallet.
           </p>
         </div>
       </div>
       {/* certificate of completion*/}
       <div className="flex flex-col items-center pt-8 pb-44">
-        <img src="/Images/certificate-of-completion.png" className="w-82 lg:w-3/6 lg:pt-16" />
+        <img
+          src="/Images/certificate-of-completion.png"
+          className="w-82 lg:w-3/6 lg:pt-16"
+        />
       </div>
       {/* last Image_fixer used and button*/}
       <div className="space-y-6">
@@ -150,7 +154,7 @@ export default function Home() {
         />
         <div className="flex flex-col items-center">
           <button className="rounded-3xl border border-gray-300 py-2 px-6 mb-12">
-          <Link href={"/course"}>Start the course</Link>
+            <Link href={"/course"}>Start the course</Link>
           </button>
         </div>
       </div>
